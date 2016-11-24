@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home page</title>
+	<!-- Angular Material style sheet -->
+	<link rel="stylesheet" href="/lib/css/angular-material.min.1.1.0.css">
+	<!-- for icons -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link data-require="bootstrap@4.0.0-alpha.2" data-semver="4.0.0-alpha.2" rel="stylesheet" href="/lib/css/bootstrap.v4.css" />
+	<link rel="stylesheet" type="text/css" href="/lib/css/style.css">
+	<link rel="stylesheet" href="lf.css">
+	<script src="/lib/script/jquery1.12.4.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+</head >
+<body ng-app="weatherApp" ng-controller="weatherAppCtrl" >
+	<!-- <md-toolbar> <b>Weather App</b></md-toolbar> -->
+
+  
+	<md-toolbar>
+		<div class="md-toolbar-tools">
+			<md-button aria-label="WIPRO">
+				WIPRO
+			</md-button>
+			<h2>
+				<span>Weather Forecast App</span>
+			</h2>
+			<span flex=""></span>
+			<!-- <md-button class="md-raised" aria-label="Learn More">
+			Learn More
+		</md-button> -->
+
+		<md-button class="md-fab md-mini" aria-label="Favorite">
+			<md-icon><i>S</i></md-icon>
+		</md-button>
+		<!-- <img src="public\lib\images\cock.jpg" alt="" /> -->
+
+	</div>
+</md-toolbar>
+
+
+
+
+
+
+
+
+<div class="container">
+	<div class="coloum">
+		<div class="col-md-5">
+
+			<md-card>
+				<md-card-title>
+					<md-card-title-text>
+
+						<span class="md-headline"><i><b>Bengaluru</b></i></span>
+						<span class="md-subhead">Next 5 days Bengaluru Forecast </span>
+					</md-card-title-text>
+
+				</md-card-title>
+				<md-card-actions layout="row" layout-align="end center">
+					<md-button class="md-warn" ng-click="showWeather('Bengaluru')" > App It</md-button>
+				</md-card-actions>
+			</md-card>
+		</div>
+
+		<div class="col-md-5">
+
+			<md-card>
+				<md-card-title>
+					<md-card-title-text>
+						<span class="md-headline"><i><b>Delhi</b></i></span>
+						<span class="md-subhead">Next 5 days Delhi Forecast  </span>
+					</md-card-title-text>
+
+				</md-card-title>
+				<md-card-actions layout="row" layout-align="end center">
+					<md-button class="md-warn" ng-click="showWeather('Delhi')">App It</md-button>
+				</md-card-actions>
+			</md-card>
+
+		</div>
+
+		<div class="col-md-5">
+
+			<md-card>
+				<md-card-title>
+					<md-card-title-text>
+						<span class="md-headline"><i><b>Kolakata</b></i></span>
+						<span class="md-subhead">Next 5 days  Kolkata Forecast  </span>
+					</md-card-title-text>
+
+				</md-card-title>
+				<md-card-actions layout="row" layout-align="end center">
+					<md-button class="md-warn" ng-click="showWeather('Kolkata')" >App It</md-button>
+				</md-card-actions>
+			</md-card>
+		</div>
+		<div class="col-md-5">
+			<md-card>
+				<md-card-title>
+					<md-card-title-text>
+						<span class="md-headline"><i><b>Chennai</b></i></span>
+						<span class="md-subhead">Next 5 days Chennai Forecast </span>
+					</md-card-title-text>
+
+				</md-card-title>
+				<md-card-actions layout="row" layout-align="end center">
+					<md-button class="md-warn" ng-click="showWeather('Chennai')" >App It</md-button>
+				</md-card-actions>
+			</md-card>
+
+		</div>
+	</div>
+	<myweather weather="weatherDetails"></myweather>
+
+
+</div>
+<!--  end of main row -->
+
+<!-- all js files -->
+
+
+<script data-require="bootstrap@4.0.0-alpha.2" data-semver="4.0.0-alpha.2" src="/lib/script/bootstrapv4.js"></script>
+<script src="/lib/script/angular.v.1.5.3.js"></script>
+<script src="/lib/script/angular-animate.1.5.3.js"></script>
+<script src="/lib/script/angular-aria.1.5.3.js"></script>
+<script src="/lib/script/angular-messages.1.5.3.js"></script>
+
+
+<script src="/lib/script/angular_material.1.1.0.js"></script>
+
+<script src="/lib/script/angular-material-icons.0.7.1.js"></script>
+
+
+<script src="/lib/script/angular-ui-router.0.3.1.js"></script>
+
+
+<script type="text/javascript" src="/lib/script/moment.v2.15.1.js"></script>
+<script src="/lib/script/angular-moment.js"></script>
+
+<script src="/app1.js"></script>
+<script src="/components/weatherCtrl.js" ></script>
+
+
+</body>
+
+</html>

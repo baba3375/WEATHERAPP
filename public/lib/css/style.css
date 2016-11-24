@@ -1,0 +1,9 @@
+.height-chips .md-chips .md-chip {
+  height: 60px;
+  line-height: 60px;
+  border-radius: 30px;
+}
+
+.height-chips .md-chips .md-chip .md-chip-remove {
+  height: 60px;
+}
